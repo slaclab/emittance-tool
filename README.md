@@ -7,9 +7,14 @@ There you will also find an "example" folder with some data and a script inside 
 
 In general, the code is structured in the following way:
 
-EmitMeasToolCore.py : data acquisition
-EmitMeasToolMain.py: GUI
-beamdynamics.py: analysis
-MatchingToolMain.py: matching
-plot_results.py: display
-EmittanceToolConfig.py: configuration
+- `EmitMeasToolCore.py` : data acquisition
+
+- `EmitMeasToolMain.py`: GUI
+
+- `beamdynamics.py`: analysis
+
+- `MatchingToolMain.py`: matching
+
+- `plot_results.py`: display
+
+- `EmittanceToolConfig.py1: configuration
