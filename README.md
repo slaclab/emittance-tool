@@ -17,4 +17,4 @@ In general, the code is structured in the following way:
 
 - `plot_results.py`: display
 
-- `EmittanceToolConfig.py1: configuration
+- `EmittanceToolConfig.py`: configuration
