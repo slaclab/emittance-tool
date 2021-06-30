@@ -1,0 +1,6 @@
+include README
+include LICENSE
+include requirements.txt
+recursive-include pyemittance/ *ui *txt *pkl
+recursive-include examples/ *
+recursive-include docs/ *

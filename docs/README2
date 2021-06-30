@@ -1,0 +1,21 @@
+#source /opt/gfa/python
+#source activate /opt/gfa/python-3.5/latest/envs/scipy_test
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/lib/
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/epics/base/lib/SL6-x86_64/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/intel/intel-14.0.2/lib/intel64/
+
+module load gcc/7.3.0
+module load Java/15u36
+source /opt/gfa/python 3.5
+
+export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/PythonModule:$PYTHONPATH
+#export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/Layout:$PYTHONPATH
+export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/lib:$PYTHONPATH
+export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/lib/python3:$PYTHONPATH
+#export PYTHONPATH=/opt/gfa/cafe/python/python-3.5/latest/lib/:$PYTHONPATH
+export PYTHONPATH=/opt/gfa/cafe/python/pycafe/prod:$PYTHONPATH
+#export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/git/scripts/VA:$PYTHONPATH
+#export PYTHONPATH=/home/sfop/tmp/pyscan:$PYTHONPATH
+#export PYTHONPATH=/afs/psi.ch/intranet/SF/Beamdynamics/Masa/HLA/git_pyscan:$PYTHONPATH
+
