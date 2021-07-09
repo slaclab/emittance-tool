@@ -24,7 +24,7 @@ jobs:
           yes | pip install -r requirements.txt
           yes | pip install -r test-requirements.txt
           pip install .
-          pytest --pyargs pyemittance
+          pytest
 
 
           
