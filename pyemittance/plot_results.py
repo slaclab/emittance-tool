@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import colorsys
 
-import pyemittance.beamdynamics
+from pyemittance import beamdynamics
 
 import pyemittance.myplotstyle as ms
 

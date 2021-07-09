@@ -7,16 +7,16 @@ from OMType import FacilityContainer
 from OMSwissFELmagnet import SwissFELmagnet
 from pyemittance.OMLayoutNov2020 import SwissFEL
 
-import pyemittance.pyscan
-import pyemittance.pyscan.interface.pyScan as PyScan
+from pyemittance import pyscan
+from pyemittance.pyscan.interface import pyScan as PyScan
 
 from epics import caget
 
 from cam_server import PipelineClient
 from cam_server.utils import get_host_port_from_stream_address
 
-import pyemittance.EmittanceToolConfig
-import pyemittance.beamdynamics
+from  pyemittance import EmittanceToolConfig
+from pyemittance import beamdynamics
 
 PreDefinedGroups = [
         'Bend:I-SET',
