@@ -69,7 +69,9 @@ def test_example(num_regression, data_regression, example_data):
 
     # only accepts 1d arrays 
     numpy_data = {item: numpy_data[item].flatten() for item in numpy_data}
-    float_data = {item: float(float_data[item]) for item in float_data}
+
+    # known issue with np.float64 types
+    float_data = {item: float('{:g}'.format(float('{:.6g}'.format(float_data[item])))) for item in float_data}
 
     num_regression.check(numpy_data)
     data_regression.check(float_data)
