@@ -1,6 +1,6 @@
 import h5py
 import numpy as np
-from pyscan import PShellFunction, function_value
+from pyemittance.pyscan import PShellFunction, function_value
 
 def get_wire_scanner_readable(wire_scanner, blms, scan_type, n_points, n_backgrounds=10, bunch_number=1):
 

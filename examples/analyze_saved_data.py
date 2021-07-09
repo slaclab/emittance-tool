@@ -3,9 +3,9 @@ import sys
 if '../pyemittance' not in sys.path:
     sys.path.append('../pyemittance')
 
-import h5_storage
-import beamdynamics
-import plot_results
+from pyemittance import h5_storage
+from pyemittance import beamdynamics
+from pyemittance import plot_results
 
 plt.close('all')
 

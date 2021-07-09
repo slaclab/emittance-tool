@@ -7,9 +7,9 @@ import numpy as np
 
 from epics import caget
 
-from OMMadx2020 import MadX
-import EmittanceToolConfig
-from EmitMeasToolCore import EC, SF, EM, SM
+from pyemittance.OMMadx2020 import MadX
+from pyemittance import EmittanceToolConfig
+from pyemittance.EmitMeasToolCore import EC, SF, EM, SM
 
 
 madx_local = MadX(42)

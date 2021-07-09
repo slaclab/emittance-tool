@@ -14,20 +14,11 @@ from scipy.constants import m_e, e, c
 import matplotlib.pyplot as plt
 #import colorsys
 
-# Using this try/except, this file can be used when this module is executed directly or when it is imported
-try:
-    from . import EmittanceToolConfig
-    from .linearFit import LinearFit
-
-    from .tilt import TiltAnalyzer
-    from . import myplotstyle as ms
-    from .gaussfit import GaussFit
-except (SystemError, ImportError):
-    import EmittanceToolConfig
-    from linearFit import LinearFit
-    from tilt import TiltAnalyzer
-    import myplotstyle as ms
-    from gaussfit import GaussFit
+from pyemittance import EmittanceToolConfig
+from pyemittance.linearFit import LinearFit
+from pyemittance.tilt import TiltAnalyzer
+import pyemittance.myplotstyle as ms
+from pyemittance.gaussfit import GaussFit
 
 mEl_eV = m_e/e*c**2
 

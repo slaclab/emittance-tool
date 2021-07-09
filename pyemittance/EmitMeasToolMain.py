@@ -9,13 +9,13 @@ import elog
 from OMEpicsChannel import EpicsChannel
 from epics import caget, caput
 
-from MatchingToolMain import StartMatch, printOptics
-from TiltCorrectionMain import startTiltWindow
+from pyemittance.MatchingToolMain import StartMatch, printOptics
+from pyemittance.TiltCorrectionMain import startTiltWindow
 from h5_storage import saveH5Recursive, loadH5Recursive
-import EmittanceToolConfig
-import beamdynamics
-import EmitMeasToolCore
-import plot_results
+from pyemittance import EmittanceToolConfig
+from pyemittance import beamdynamics
+from pyemittance import EmitMeasToolCore
+from pyemittance import plot_results
 
 
 #TODO

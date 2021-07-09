@@ -2,23 +2,21 @@ import logging
 import numpy as np
 
 from OMEpicsChannel import EpicsChannel
-from myEnergyManager import EnergyManager
+from pyemittance.myEnergyManager import EnergyManager
 from OMType import FacilityContainer
 from OMSwissFELmagnet import SwissFELmagnet
-#from OMLayout import SwissFEL
-from OMLayoutNov2020 import SwissFEL
-#from OMLayoutSep2020 import SwissFEL
+from pyemittance.OMLayoutNov2020 import SwissFEL
 
-import pyscan
-import pyscan.interface.pyScan as PyScan
+import pyemittance.pyscan
+import pyemittance.pyscan.interface.pyScan as PyScan
 
 from epics import caget
 
 from cam_server import PipelineClient
 from cam_server.utils import get_host_port_from_stream_address
 
-import EmittanceToolConfig
-import beamdynamics
+import pyemittance.EmittanceToolConfig
+import pyemittance.beamdynamics
 
 PreDefinedGroups = [
         'Bend:I-SET',
