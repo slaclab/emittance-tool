@@ -1,8 +1,6 @@
 import numpy as np
-try:
-    from gaussfit import GaussFit
-except:
-    from .gaussfit import GaussFit
+from pyemittance.gaussfit import GaussFit
+
 
 class TiltAnalyzer:
 

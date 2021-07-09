@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import colorsys
 
-import beamdynamics
+from pyemittance import beamdynamics
 
-import myplotstyle as ms
+import pyemittance.myplotstyle as ms
 
 def plotMisplacement(emit_data):
     misplacement_dict = emit_data['Meta_data']['misplacement']

@@ -14,11 +14,11 @@ from epics import caget, caput
 #from cam_server import PipelineClient
 #from cam_server.utils import get_host_port_from_stream_address
 
-import beamdynamics
-import plot_results
-import EmitMeasToolCore
-import EmittanceToolConfig
-import tilt as tilt_module
+from pyemittance import beamdynamics
+from pyemittance import plot_results
+from pyemittance import EmitMeasToolCore
+from pyemittance import EmittanceToolConfig
+from pyemittance import tilt as tilt_module
 
 Ui_MainWindow, QMainWindow = loadUiType('TiltGUI2.ui')
 
