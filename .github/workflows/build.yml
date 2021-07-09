@@ -22,7 +22,7 @@ jobs:
       - name: Run tests
         run: |
           yes | pip install -r requirements.txt
-          yes | pip install -y -r test-requirements.txt
+          yes | pip install -r test-requirements.txt
           pip install .
           pytest --pyargs pyemittance
 
